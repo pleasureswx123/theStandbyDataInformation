@@ -1,0 +1,14 @@
+http://www.cnblogs.com/xiaoxuanzi/archive/2011/07/30/SCM.html
+TortoiseGit 使用快速指南: 利用GitHub做Git Server
+
+http://hi.baidu.com/zstar_sky/item/0a956a8835191310c31627c3
+Webstorm & PhpStorm的序列号和证书
+
+http://www.cssha.com/webstorm-phpstorm-remote-host
+使用WebStorm/Phpstorm实现remote host远程开发
+
+http://www.cnblogs.com/enix/archive/2012/04/29/2475983.html
+[nodejs]使用神器webstorm调试nodejs
+
+http://hi.baidu.com/shaw_cd/item/8af86aa0e6c098a029ce9d1e
+WebStorm 6.0的live edit功能实现步骤
