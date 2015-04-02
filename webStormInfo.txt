@@ -1,14 +1,14 @@
-http://www.cnblogs.com/xiaoxuanzi/archive/2011/07/30/SCM.html
-TortoiseGit Ê¹ÓÃ¿ìËÙÖ¸ÄÏ: ÀûÓÃGitHub×öGit Server
+ï»¿http://www.cnblogs.com/xiaoxuanzi/archive/2011/07/30/SCM.html
+TortoiseGit ä½¿ç”¨å¿«é€ŸæŒ‡å—: åˆ©ç”¨GitHubåšGit Server
 
 http://hi.baidu.com/zstar_sky/item/0a956a8835191310c31627c3
-Webstorm & PhpStormµÄĞòÁĞºÅºÍÖ¤Êé
+Webstorm & PhpStormçš„åºåˆ—å·å’Œè¯ä¹¦
 
 http://www.cssha.com/webstorm-phpstorm-remote-host
-Ê¹ÓÃWebStorm/PhpstormÊµÏÖremote hostÔ¶³Ì¿ª·¢
+ä½¿ç”¨WebStorm/Phpstormå®ç°remote hostè¿œç¨‹å¼€å‘
 
 http://www.cnblogs.com/enix/archive/2012/04/29/2475983.html
-[nodejs]Ê¹ÓÃÉñÆ÷webstormµ÷ÊÔnodejs
+[nodejs]ä½¿ç”¨ç¥å™¨webstormè°ƒè¯•nodejs
 
 http://hi.baidu.com/shaw_cd/item/8af86aa0e6c098a029ce9d1e
-WebStorm 6.0µÄlive edit¹¦ÄÜÊµÏÖ²½Öè
+WebStorm 6.0çš„live editåŠŸèƒ½å®ç°æ­¥éª¤

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script>
+var decToHex = function (str) {
+    var res = [];
+    for (var i = 0; i < str.length; i++) {
+        var name = str.charAt(i);
+        var index = str.indexOf(name);
+        var code = str.charCodeAt(i);
+        var code10 = code.toString();
+        var code16 = code.toString(16);
+        var code00 = '00' + code16;
+        var codeString = code00.slice(-4);
+        console.log(index + ':::' + name + ':::' + code + ':::' + code10 + ':::' + code16 + ':::' + code00 + ':::' + codeString);
+        res[i] = codeString;
+    }
+    console.log(res);
+    return "\\u" + res.join('\\u');
+};
+decToHex('abc中华人民ＡＢ32');
+</script>
+</body>
+</html>
