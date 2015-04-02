@@ -22,6 +22,72 @@ var decToHex = function (str) {
     return "\\u" + res.join('\\u');
 };
 decToHex('abc中华人民ＡＢ32');
+
+//以下是牛人写的，标注一下回家慢慢看
+//最简单的乘法操作定义
+function multiply(x, y) {
+    return x * y;
+}
+
+//定义单位“1”
+function normalize(x) {
+    return 1;
+}
+
+//定义整数乘方
+function powDef(multiply, normalize) {
+    return (function pow(d, e) {
+        var ret = normalize(d);
+        if (e < 0) {
+            return ret / pow(d, -e);
+        } else if (e == 0) {
+            return ret;
+        } else {
+            for (var i = 0; i < e; i++) {
+                ret = multiply(ret, d);
+            }
+            return ret;
+        }
+    });
+}
+
+var pow = powDef(multiply, normalize);
+console.log(pow(5, 2)); // 25
+
+//二阶矩阵乘法定义
+/**
+ [[X11, X12]     [[Y11, Y12]     [[X11 * Y11 + X12 * Y21, X11 * Y12 + X12 * Y22],
+ [X21, X22]] X   [Y21, Y22]] =   [X21 * Y11 + X22 * Y21, X21 * Y12 + X22 * Y22]]
+ */
+function matrixMultiply(m1, m2) {
+    return [
+        [m1[0][0] * m2[0][0] + m1[0][1] * m2[1][0],
+            m1[0][0] * m2[0][1] + m1[0][1] * m2[1][1]],
+        [m1[1][0] * m2[0][0] + m1[1][1] * m2[1][0],
+            m1[1][0] * m2[0][1] + m1[1][1] * m2[1][1]]
+    ];
+}
+
+function matrixNormalize(m1) {
+    return [
+        [1, 0],
+        [0, 1]
+    ];
+}
+
+var matrixPow = powDef(matrixMultiply, matrixNormalize);
+//console.log(matrixPow([[1,1],[1,0]], 3));
+//用矩阵乘方求斐波那契数列
+//1,1,2,3,5,8,13...
+function fib(n) {
+    return matrixPow([
+        [1, 1],
+        [1, 0]
+    ], n - 1)[0][0];
+}
+
+console.log(fib(7));
+
 </script>
 </body>
 </html>
